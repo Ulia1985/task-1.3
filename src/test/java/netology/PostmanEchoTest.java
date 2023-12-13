@@ -11,7 +11,7 @@ class PostmanEchoTest {
         given()
                 .baseUri("https://postman-echo.com")
                 .contentType("text/plain; charset=UTF-8")
-                .body("some data")
+                .body("Привет, Мир!!!")
                 .when()
                 .post("/post")
                 .then()
@@ -24,7 +24,7 @@ class PostmanEchoTest {
     void RequestBody() {
         given()
                 .baseUri("https://postman-echo.com")
-                .body("Привет, Мир!!!")
+                .body("some data")
                 .when()
                 .post("/post")
                 .then()
